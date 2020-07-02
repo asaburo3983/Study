@@ -2,7 +2,7 @@
 #include "GameMathLib.h"
 
 
-
+//三角関数系の処理//////////////////////////////
 ////原点と角度と半径を送ると位置が返ってくる 右回り
 void GetCirclePoint(float posX, float posY, float r, float  angle, float* px, float* py) {
 
@@ -23,3 +23,25 @@ float GetCosWave(float angle) {
 float GetSinWave(float angle) {
 	return 	sin((double)angle / 180 * 3.1415);
 }
+////////////////////////////////////////////////////////////
+//当たり判定の処理//////////////////////////////
+//四角の当たり判定
+bool HitRect(int centerX, int centerY, int width, int height, int px, int py) {
+	if (px < centerX - width / 2 && px < centerX + width / 2) {
+		if (py < centerY - height / 2 && py < centerY + height / 2) {
+			return true;
+		}
+	}
+	return false;
+}
+////////////////////////////////////////////////////////////
+//ファイル操作//////////////////////////////
+void LoadTextFile(const char* filePath, char text[][200],int size0) {
+	FILE* fp = fopen(filePath,"r");
+	for (int i = 0; i < size0; i++) {
+		fscanf(fp, "%s", text[i]);
+	}
+	fclose(fp);
+}
+
+////////////////////////////////////////////////////////////
