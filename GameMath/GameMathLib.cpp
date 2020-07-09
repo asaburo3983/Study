@@ -35,13 +35,13 @@ bool HitRect(int centerX, int centerY, int width, int height, int px, int py) {
 	return false;
 }
 //‰~‚Ì“–‚½‚è”»’è
-bool HitCircle(float posX1, float posY1 float r1, float posX2, float posY2, float r2) {
+bool HitCircle(float posX1, float posY1, float r1, float posX2, float posY2, float r2) {
 
 	float distX, distY;//x&y‚Ì‹——£
 	float dist;//“_“¯m‚ÌÎ•Ó‚Ì‹——£
 
-	distX = posX - posX2;//‹——£‚ğ‹‚ß‚é
-	distY = posY - posY2;
+	distX = posX1 - posX2;//‹——£‚ğ‹‚ß‚é
+	distY = posY1 - posY2;
 
 	dist = sqrt(distX*distX + distY * distY);//Î•Ó‚Ì’·‚³‚ğ‹‚ß‚é@
 

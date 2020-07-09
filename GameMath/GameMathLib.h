@@ -17,7 +17,7 @@ float GetSinWave(float angle);
 //当たり判定//////////////////////////////
 //中心点を描画軸とする四角画像の当たり判定
 bool HitRect(int centerX, int centerY, int width, int height, int px, int py);//矩形
-bool HitCircle(float posX1, float posY1 float r1, float posX2, float posY2, float r2);//円
+bool HitCircle(float posX1, float posY1, float r1, float posX2, float posY2, float r2);//円
 ////////////////////////////////////////////////////////////
 //ファイル操作//////////////////////////////
 //ファイルから1行200バイト分のテキストを2次元配列に入れる ファイルはソフトでShift-JISにすること、UTF-8は文字化けする
