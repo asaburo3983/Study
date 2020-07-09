@@ -29,11 +29,28 @@ float GetSinWave(float angle) {
 bool HitRect(int centerX, int centerY, int width, int height, int px, int py) {
 	if (px < centerX - width / 2 && px < centerX + width / 2) {
 		if (py < centerY - height / 2 && py < centerY + height / 2) {
-			return true;
+			return true;//当たっている
 		}
 	}
 	return false;
 }
+//円の当たり判定
+bool HitCircle(float posX1, float posY1 float r1, float posX2, float posY2, float r2) {
+
+	float distX, distY;//x&yの距離
+	float dist;//点同士の斜辺の距離
+
+	distX = posX - posX2;//距離を求める
+	distY = posY - posY2;
+
+	dist = sqrt(distX*distX + distY * distY);//斜辺の長さを求める　
+
+	if (r1 + r2 > dist) {
+		return true;//当たっている
+	}
+	return false;
+}
+
 ////////////////////////////////////////////////////////////
 //ファイル操作//////////////////////////////
 void LoadTextFile(const char* filePath, char text[][200],int size0) {
