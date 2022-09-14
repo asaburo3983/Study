@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2022-09-14T06:43:20.427Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.0.0 Safari/537.36" etag="Vy3BZisX4Wczde-KW5vy" version="20.3.0" type="github">
+<mxfile host="app.diagrams.net" modified="2022-09-14T06:52:07.339Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.0.0 Safari/537.36" etag="dPeekdgCgMk5PScAFMU8" version="20.3.0" type="github">
   <diagram id="prtHgNgQTEPvFCAcTncT" name="Page-1">
-    <mxGraphModel dx="937" dy="575" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="3020" dy="1853" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -110,22 +110,73 @@
           <mxGeometry x="9" y="30" width="70" height="90" as="geometry" />
         </mxCell>
         <mxCell id="bcszKCKNUlgbo5UYxURi-151" value="Resource" style="swimlane;" vertex="1" parent="dNxyNK7c78bLwvsdeMH5-11">
-          <mxGeometry x="14" y="670" width="726" height="440" as="geometry" />
+          <mxGeometry x="14" y="670" width="726" height="870" as="geometry" />
         </mxCell>
         <mxCell id="bcszKCKNUlgbo5UYxURi-153" value="Materials" style="swimlane;" vertex="1" parent="bcszKCKNUlgbo5UYxURi-151">
-          <mxGeometry x="16" y="40" width="304" height="360" as="geometry" />
+          <mxGeometry x="16" y="40" width="264" height="820" as="geometry" />
         </mxCell>
-        <mxCell id="bcszKCKNUlgbo5UYxURi-156" value="StageMaterial" style="swimlane;" vertex="1" parent="bcszKCKNUlgbo5UYxURi-153">
-          <mxGeometry x="14" y="40" width="240" height="170" as="geometry" />
+        <mxCell id="bcszKCKNUlgbo5UYxURi-156" value="Stage" style="swimlane;" vertex="1" parent="bcszKCKNUlgbo5UYxURi-153">
+          <mxGeometry x="14" y="40" width="240" height="150" as="geometry" />
         </mxCell>
         <mxCell id="bcszKCKNUlgbo5UYxURi-157" value="block1&lt;br&gt;.mat" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;" vertex="1" parent="bcszKCKNUlgbo5UYxURi-156">
           <mxGeometry x="10" y="40" width="80" height="100" as="geometry" />
         </mxCell>
+        <mxCell id="bcszKCKNUlgbo5UYxURi-164" value="Player" style="swimlane;" vertex="1" parent="bcszKCKNUlgbo5UYxURi-153">
+          <mxGeometry x="14" y="200" width="240" height="150" as="geometry" />
+        </mxCell>
+        <mxCell id="bcszKCKNUlgbo5UYxURi-165" value="Skin&lt;br&gt;.mat" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;" vertex="1" parent="bcszKCKNUlgbo5UYxURi-164">
+          <mxGeometry x="10" y="40" width="80" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="bcszKCKNUlgbo5UYxURi-166" value="Enemy" style="swimlane;" vertex="1" parent="bcszKCKNUlgbo5UYxURi-153">
+          <mxGeometry x="14" y="360" width="240" height="150" as="geometry" />
+        </mxCell>
+        <mxCell id="bcszKCKNUlgbo5UYxURi-167" value="Skin&lt;br&gt;.mat" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;" vertex="1" parent="bcszKCKNUlgbo5UYxURi-166">
+          <mxGeometry x="10" y="40" width="80" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="bcszKCKNUlgbo5UYxURi-168" value="Effect" style="swimlane;" vertex="1" parent="bcszKCKNUlgbo5UYxURi-153">
+          <mxGeometry x="12" y="520" width="240" height="150" as="geometry" />
+        </mxCell>
+        <mxCell id="bcszKCKNUlgbo5UYxURi-169" value="Barn&lt;br&gt;.mat" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;" vertex="1" parent="bcszKCKNUlgbo5UYxURi-168">
+          <mxGeometry x="10" y="40" width="80" height="100" as="geometry" />
+        </mxCell>
         <mxCell id="bcszKCKNUlgbo5UYxURi-154" value="Textures" style="swimlane;" vertex="1" parent="bcszKCKNUlgbo5UYxURi-151">
-          <mxGeometry x="346" y="40" width="200" height="200" as="geometry" />
+          <mxGeometry x="296" y="40" width="342" height="820" as="geometry" />
+        </mxCell>
+        <mxCell id="bcszKCKNUlgbo5UYxURi-170" value="Material" style="swimlane;" vertex="1" parent="bcszKCKNUlgbo5UYxURi-154">
+          <mxGeometry x="10" y="40" width="280" height="190" as="geometry" />
+        </mxCell>
+        <mxCell id="bcszKCKNUlgbo5UYxURi-174" value="Stage" style="swimlane;" vertex="1" parent="bcszKCKNUlgbo5UYxURi-170">
+          <mxGeometry x="10" y="40" width="126" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="bcszKCKNUlgbo5UYxURi-175" value="block1&lt;br&gt;.png" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;direction=east;" vertex="1" parent="bcszKCKNUlgbo5UYxURi-174">
+          <mxGeometry x="14" y="30" width="60" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="bcszKCKNUlgbo5UYxURi-176" value="Player" style="swimlane;" vertex="1" parent="bcszKCKNUlgbo5UYxURi-170">
+          <mxGeometry x="144" y="40" width="126" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="bcszKCKNUlgbo5UYxURi-177" value="Skin&lt;br&gt;.png" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;direction=east;" vertex="1" parent="bcszKCKNUlgbo5UYxURi-176">
+          <mxGeometry x="14" y="30" width="60" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="bcszKCKNUlgbo5UYxURi-172" value="Sprite" style="swimlane;" vertex="1" parent="bcszKCKNUlgbo5UYxURi-154">
+          <mxGeometry x="12" y="240" width="330" height="580" as="geometry" />
+        </mxCell>
+        <mxCell id="bcszKCKNUlgbo5UYxURi-233" value="OptionUI" style="swimlane;fontSize=12;" vertex="1" parent="bcszKCKNUlgbo5UYxURi-172">
+          <mxGeometry x="12" y="30" width="198" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="bcszKCKNUlgbo5UYxURi-234" value="TitleUI" style="swimlane;fontSize=12;" vertex="1" parent="bcszKCKNUlgbo5UYxURi-172">
+          <mxGeometry x="12" y="180" width="225" height="160" as="geometry" />
+        </mxCell>
+        <mxCell id="bcszKCKNUlgbo5UYxURi-235" value="Effect" style="swimlane;fontSize=12;" vertex="1" parent="bcszKCKNUlgbo5UYxURi-172">
+          <mxGeometry x="14" y="360" width="296" height="150" as="geometry" />
         </mxCell>
         <mxCell id="bcszKCKNUlgbo5UYxURi-152" value="Prefabs" style="swimlane;" vertex="1" parent="dNxyNK7c78bLwvsdeMH5-11">
           <mxGeometry x="760" y="670" width="970" height="440" as="geometry" />
+        </mxCell>
+        <mxCell id="bcszKCKNUlgbo5UYxURi-178" value="&lt;font style=&quot;font-size: 29px;&quot;&gt;データの行方が&lt;br&gt;わからなくなるので&lt;br&gt;できるだけ&lt;br&gt;わかりやすく配置しましょう&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="dNxyNK7c78bLwvsdeMH5-11">
+          <mxGeometry x="1820" y="250" width="440" height="1280" as="geometry" />
+        </mxCell>
+        <mxCell id="bcszKCKNUlgbo5UYxURi-236" value="&lt;font style=&quot;font-size: 24px;&quot;&gt;ScriptとPrefabはすごい勢いで増えるので&lt;br&gt;おいおい決定する&lt;/font&gt;" style="shape=callout;whiteSpace=wrap;html=1;perimeter=calloutPerimeter;fontSize=12;" vertex="1" parent="dNxyNK7c78bLwvsdeMH5-11">
+          <mxGeometry x="810" y="70" width="930" height="160" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
